@@ -21,6 +21,8 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    background-color: #FFF1E6;
 }
 
 @font-face {
@@ -31,22 +33,21 @@ body {
 }
 
 section {
-    max-width: 1000px;
+    max-width: 1200px;
+    margin: 50px;
 }
 
 .header {
     width: 100%;
-    height: 50px;
     background-image: linear-gradient(to right, #FF7700, #FFA85C);
+}
 
+.nav {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.nav_menu {
-    display: flex;
-    gap: 20px;
+    height: 50px;
+    gap: 30px;
 }
 
 .nav_menu_link {
@@ -59,4 +60,41 @@ section {
 
 .nav_menu_link:hover {
     color: black;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.container_recipe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card_recipe {
+    max-width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+h4 {
+    color: #FF7700;
+    padding: 10px 0 0 20px;
+}
+
+.card_recipe p {
+    padding: 0 0 20px 20px;
+    line-height: 1.8;
+}
+
+.img_recipe {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
