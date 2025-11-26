@@ -192,7 +192,7 @@ h4 {
 @media (max-width: 399px) {
 
     html, body {
-        height: 150%;
+        height: 180%;
     }
 
     .nav {
