@@ -189,11 +189,12 @@ h4 {
 
 }
 
-html, body {
-    height: 150%;
-}
-
 @media (max-width: 399px) {
+
+    html, body {
+        height: 150%;
+    }
+
     .nav {
         display: flex;
         flex-direction: column;
