@@ -40,6 +40,10 @@ section {
 .header {
     width: 100%;
     background-image: linear-gradient(to right, #FF7700, #FFA85C);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav {
@@ -151,4 +155,49 @@ h4 {
     color: white;
     width: 100%;
     padding: 20px;
+}
+
+@media (max-width: 849px) {
+
+    .container_recipe,
+    .container_why_us {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        margin: 10px 5px;
+    }
+
+    .container_recipe {
+        margin-bottom: 10px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .img_about {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        align-self: center;
+    }
+
+}
+
+html, body {
+    height: 150%;
+}
+
+@media (max-width: 399px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 0;
+    }
 }
