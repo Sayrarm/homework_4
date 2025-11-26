@@ -134,14 +134,21 @@ h4 {
     font-size: 25px;
 }
 
-.about_info p, h3 {
+.about_info p, .info_title {
     margin-left: 15px;
 }
 
-h3 {
+.info_title {
     margin-bottom: 20px;
 }
 
 .card_why_us {
     padding: 20px 40px;
+}
+
+.footer {
+    background-color: #472100;
+    color: white;
+    width: 100%;
+    padding: 20px;
 }
